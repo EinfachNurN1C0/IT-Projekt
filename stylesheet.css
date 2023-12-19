@@ -4,46 +4,104 @@
     color: white;
 }
 
-body {
+.oben {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-top: 1%;
+}
+
+.ueberschrift, .navigationsleiste {
     text-align: center;
 }
 
-.haeufige_fragen, .produkte {
-    align-items: center;
+.ueberschrift > a {
+    text-decoration: none;
+}
+
+.navigationsleiste > a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navigationsleiste > a:hover {
+    background-color: white;
+    color: black;
+}
+
+.unten {
     display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.deals {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.deal_1 {
+    text-align: center;
+}
+
+.deals a {
+    text-decoration: none;
+}
+
+.deals img {
+    height: 90%;
+}
+
+.willkommen {
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+.willkommen > .nachricht {
+    text-align: center;
+}
+
+.kontakt {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.haeufige_fragen {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.fragen > ul {
+    list-style: none;
+}
+
+.computer, .laptops {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
-.haeufige_fragen img {
-    max-width: 100%;
-    margin-right: 20px;
-}
-
-.fragen {
-    max-width: 600px;
+.computer > div, .laptops > div {
+    flex: 1;
+    text-align: center;
 }
 
 .produkte {
-    flex-direction: column;
-}
-
-.produkte h1,
-.produkte p {
-    margin-bottom: 20px;
-}
-
-.produkte ul {
-    list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
-.produkte li {
+.produkte > div {
     text-align: center;
+    margin: 10px;
 }
 
 .produkte a {
@@ -51,43 +109,5 @@ body {
 }
 
 .produkte img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-#shop_titel {
-    padding: 20px;
-}
-
-h1 {
-    font-size: 36px;
-    margin: 0;
-}
-
-.navigationsleiste {
-    overflow: hidden;
-}
-
-.navigationsleiste a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navigationsleiste a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.computer, .laptops {
-    display: flex;
-}
-
-.computer div, .laptops div {
-    flex: 33.33%;
-    padding: 5px;
+    width: 25%;
 }
